@@ -1,0 +1,12 @@
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 1rem;
+}
+.catalog{
+    padding: 5rem 0;
+}
+.title{
+    padding-bottom: 4rem;
+    font-size: 2rem;
+}
