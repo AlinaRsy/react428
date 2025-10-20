@@ -1,3 +1,4 @@
+import { Link, NavLink } from 'react-router'
 import Button from '../Button/Button'
 import s from './Header.module.css'
 export default function Header(){
@@ -7,11 +8,11 @@ export default function Header(){
                 <div className={s.header__inner}>
                     <p className={s.logo}>LOGO</p>
                     <nav className={s.nav}>
-                        <a href="#" className={s.nav__item}>Главная</a>
-                        <a href="#" className={s.nav__item}>Каталог</a>
-                        <a href="#" className={s.nav__item}>Корзина</a>
+                        <NavLink to="/" className={s.nav__item}>Главная</NavLink>
+                        <NavLink to="/catalog" className={s.nav__item}>Каталог</NavLink>
+                        <p className={s.nav__item}>Корзина</p>
                     </nav>
-                    <Button/>
+                    <Button text='Авторизация'/>
                 </div>
             </div>
         </header>

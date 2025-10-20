@@ -6,9 +6,9 @@
     border: 1px solid #ccc;
     border-radius: 6px;
 }
-.card__img{
+.img{
     width: 100%;
-    aspect-ratio: 1;
+    height: 300px;
     overflow: hidden;
     border-radius: 6px;
 }

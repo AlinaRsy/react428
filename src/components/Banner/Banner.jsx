@@ -9,7 +9,7 @@ export default function Banner(){
             <p className={s.text}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. In totam maiores provident quibusdam ut, rerum nisi debitis natus saepe voluptates voluptate sequi labore vitae id!
             </p>
-            <Button/>
+            <Button text = 'Подробнее о компании'/>
         </section>
     )
 }

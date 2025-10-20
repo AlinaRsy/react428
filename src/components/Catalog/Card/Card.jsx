@@ -1,15 +1,14 @@
 import Button from '../../Button/Button'
 import s from './Card.module.css'
-import cardImg from '/cardImg.jpg'
-export default function Card(){
+export default function Card({name, price, img}){
     return(
         <div className={s.card}>
             <div className={s.img}>
-                <img src={cardImg} alt="#" />
+                <img src={img} alt="#" />
             </div>
-            <h4 className={s.title}>Название товара</h4>
-            <p className={s.price}>616$</p>
-            <Button/>
+            <h4 className={s.title}>{name}</h4>
+            <p className={s.price}>{price}$</p>
+            <Button text='Подробнее'/>
         </div>
     )
 }

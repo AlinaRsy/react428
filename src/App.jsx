@@ -1,15 +1,20 @@
+import { Route, Routes } from "react-router"
 import Banner from "./components/Banner/Banner"
 import Catalog from "./components/Catalog/Catalog"
 import Header from "./components/Header/Header"
-
+import HomePage from './pages/HomePage/HomePage'
+import CatalogPage from "./pages/CatalogPage/CatalogPage"
 function App() {
   return (
     <> 
       <Header/>
-      <Banner/>
-      <Catalog/>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/catalog" element={<CatalogPage/>}/>
+      </Routes>
     </>
   )
 }
 
 export default App
+
