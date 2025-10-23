@@ -1,0 +1,31 @@
+.product{
+    padding-top: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+.img{
+    width: 50%;
+    height: 400px;
+
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+}
+.price{
+    font-size: 2rem;
+}
+.title{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.body button{
+    width: fit-content;
+}

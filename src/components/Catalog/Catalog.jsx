@@ -11,7 +11,7 @@ export default function Catalog(){
                         {
                             products.map(product=>{
                                 return(
-                                    <Card {...product}/>
+                                    <Card key={product.id} {...product}/>
                                 )
                             })
                         }

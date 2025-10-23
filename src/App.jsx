@@ -1,20 +1,19 @@
-import { Route, Routes } from "react-router"
-import Banner from "./components/Banner/Banner"
-import Catalog from "./components/Catalog/Catalog"
-import Header from "./components/Header/Header"
-import HomePage from './pages/HomePage/HomePage'
-import CatalogPage from "./pages/CatalogPage/CatalogPage"
+import { Route, Routes } from "react-router";
+import Header from "./components/Header/Header";
+import HomePage from "./pages/HomePage/HomePage";
+import CatalogPage from "./pages/CatalogPage/CatalogPage";
+import ProductPage from "./pages/ProductPage/ProductPage";
 function App() {
   return (
-    <> 
-      <Header/>
+    <>
+      <Header />
       <Routes>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path="/catalog" element={<CatalogPage/>}/>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/catalog" element={<CatalogPage />} />
+        <Route path="/catalog/:id" element={<ProductPage />} />
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
-
+export default App;
